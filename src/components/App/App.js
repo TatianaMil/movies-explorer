@@ -1,5 +1,5 @@
 import React from "react"
-import { Routes, Route, Link, NavLink, useLocation } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import Header from "../Header/Header"
 import Main from "../Main/Main"
 import Footer from "../Footer/Footer"
@@ -17,7 +17,12 @@ function App() {
   // Временная функция для проверки, нужно ли отображать Header на текущей странице
   const shouldShowHeader = () => {
     const { pathname } = location
-    return pathname === "/"
+    return (
+      pathname === "/"  ||
+      pathname === "/movies" ||
+      pathname === "/saved-movies" ||
+      pathname === "/profile"
+    )
   }
 
   // Временная функция для проверки, нужно ли отображать Footer на текущей странице

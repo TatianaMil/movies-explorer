@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 function Profile() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="profile">
         <h3 className="profile__title">Привет, Виталий!</h3>
         <form id="form" className="profile__form" noValidate>
@@ -19,6 +19,7 @@ function Profile() {
               minLength="2"
               maxLength="40"
               required
+              placeholder="имя" 
             />
             <span className="profile__input-error"></span>
           </label>
@@ -32,6 +33,7 @@ function Profile() {
               id="email-input"
               type="email"
               required
+              placeholder="почта" 
             />
             <span className="profile__input-error"></span>
           </label>

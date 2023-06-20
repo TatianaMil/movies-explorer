@@ -19,8 +19,9 @@ function Login() {
           id="email-input"
           type="email"
           required
+          placeholder="почта" 
         />
-        <span className="form__input-error">{}</span>
+        <span className="form__input-error">Адрес электронной почты должен содержать символ "@".</span>
       </label>
       <label className="form__label">
         Пароль
@@ -30,8 +31,9 @@ function Login() {
           id="password-input"
           type="password"
           required
+          placeholder="пароль" 
         />
-        <span className="form__input-error">{}</span>
+        <span className="form__input-error">Введите пароль</span>
       </label>
     </Form>
   )

@@ -1,6 +1,6 @@
-import React from "react"
-import "./Portfolio.css"
-import arrow from "../../images/arrow.svg"
+import React from "react";
+import "./Portfolio.css";
+import arrow from "../../images/arrow.svg";
 
 function Portfolio() {
   return (
@@ -14,7 +14,11 @@ function Portfolio() {
           rel="noreferrer"
         >
           <p className="portfolio__description">Статичный сайт</p>
-          <img className="portfolio__image" src={arrow} alt="стрелка для ссылки" />
+          <img
+            className="portfolio__image"
+            src={arrow}
+            alt="стрелка для ссылки"
+          />
         </a>
         <a
           href="https://tatianamil.github.io/russian-travel/"
@@ -23,7 +27,11 @@ function Portfolio() {
           rel="noreferrer"
         >
           <p className="portfolio__description">Адаптивный сайт</p>
-          <img className="portfolio__image" src={arrow} alt="стрелка для ссылки" />
+          <img
+            className="portfolio__image"
+            src={arrow}
+            alt="стрелка для ссылки"
+          />
         </a>
         <a
           href="https://tatianamil.github.io/react-mesto-auth/"
@@ -32,11 +40,15 @@ function Portfolio() {
           rel="noreferrer"
         >
           <p className="portfolio__description">Одностраничное приложение</p>
-          <img className="portfolio__image" src={arrow} alt="стрелка для ссылки" />
+          <img
+            className="portfolio__image"
+            src={arrow}
+            alt="стрелка для ссылки"
+          />
         </a>
       </nav>
     </section>
-  )
+  );
 }
 
-export default Portfolio
+export default Portfolio;

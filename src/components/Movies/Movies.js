@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 function Movies() {
   return (
     <section className="movies">
-      <Header />
+      {/* <Header /> */}
       <SearchForm />
       <MoviesCardList />
       <Footer />

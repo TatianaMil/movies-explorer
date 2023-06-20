@@ -14,7 +14,7 @@ function Form({
   return (
     <div className="form__container">
       <Link to="/" className="form__logo">
-        <img src={logo} alt="логотип" />
+        <img src={logo} alt="логотип cайта" />
       </Link>
       <h3 className="form__title">{title}</h3>
       <form className="form" id="form" noValidate>

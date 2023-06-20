@@ -13,11 +13,11 @@
 
 .form__logo:hover {
   cursor: pointer;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .form__title {
-  color: #FFF;
+  color: #fff;
   padding: 40px 0;
   font-weight: 500;
   font-size: 24px;
@@ -47,7 +47,7 @@
 }
 
 .form__button-save:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .form__button-save_inactive {
@@ -56,12 +56,12 @@
   border: 1px solid #000000;
   box-sizing: border-box;
   color: #000000;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .form__button-save_loading {
   pointer-events: none;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .form__text {
@@ -97,7 +97,7 @@
 .form__input {
   margin: 10px 0 0;
   height: 46px;
-  color: #FFF;
+  color: #fff;
   padding: 15px 15px 15px 15px;
   width: 100%;
   font-weight: 400;
@@ -127,7 +127,7 @@
 
 .form__input-error {
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 0;
   margin: 0;
   font-weight: 400;

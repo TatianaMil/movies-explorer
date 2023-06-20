@@ -1,5 +1,5 @@
-import React from "react"
-import "./FilterCheckbox.css"
+import React from "react";
+import "./FilterCheckbox.css";
 
 function FilterCheckbox({ onFilter, isShortMovies }) {
   return (
@@ -12,7 +12,7 @@ function FilterCheckbox({ onFilter, isShortMovies }) {
       ></input>
       <span className="filter__title">Короткометражки</span>
     </form>
-  )
+  );
 }
 
-export default FilterCheckbox
+export default FilterCheckbox;

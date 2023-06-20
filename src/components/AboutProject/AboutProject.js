@@ -1,13 +1,13 @@
-import React from "react"
-import "./AboutProject.css"
+import React from "react";
+import "./AboutProject.css";
 
 function AboutProject() {
   return (
     <section className="about-project" id="about">
       <div className="about-project__container">
         <h2 className="about-project__title">О проекте</h2>
-        <div className="about-project__text-block">
-          <div className="about-project__info">
+        <ul className="about-project__text-block">
+          <li className="about-project__info">
             <h3 className="about-project__info-header">
               Дипломный проект включал 5 этапов
             </h3>
@@ -15,8 +15,8 @@ function AboutProject() {
               Составление плана, работу над бэкендом, вёрстку, добавление
               функциональности и финальные доработки.
             </p>
-          </div>
-          <div className="about-project__info">
+          </li>
+          <li className="about-project__info">
             <h3 className="about-project__info-header">
               На выполнение диплома ушло 5 недель
             </h3>
@@ -24,8 +24,8 @@ function AboutProject() {
               У каждого этапа был мягкий и жёсткий дедлайн, которые нужно было
               соблюдать, чтобы успешно защититься.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div className="about-project__time">
           <h3 className="about-project__time-header about-project__time-header_green">
             1 неделя
@@ -36,7 +36,7 @@ function AboutProject() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default AboutProject
+export default AboutProject;
