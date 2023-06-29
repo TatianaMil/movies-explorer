@@ -1,6 +1,8 @@
 import { checkResponse } from './utils';
 
-export const BASE_URL = 'http://localhost:3000';
+//export const BASE_URL = 'http://localhost:3000';
+
+export const BASE_URL = 'https://api.milinovadiplom.nomoreparties.sbs';
 
 export const register = (name, email, password) => {
   return fetch(`${BASE_URL}/signup`, {
