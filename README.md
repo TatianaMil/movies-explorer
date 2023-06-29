@@ -20,7 +20,7 @@
 
 https://github.com/TatianaMil/movies-explorer-frontend/compare/level-3?expand=1
 
-## Ccылка на проекта
+## Ccылка на проекта и IP
 
 IP 51.250.70.35
 
