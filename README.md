@@ -19,3 +19,10 @@
 ## пулл реквест
 
 https://github.com/TatianaMil/movies-explorer-frontend/compare/level-3?expand=1
+
+## Ccылка на проекта
+
+IP 51.250.70.35
+
+https://milinovadiplom.nomoreparties.sbs
+ 
