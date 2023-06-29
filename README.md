@@ -15,3 +15,7 @@
 ## ССылка на макет работы в фигме:
 
 - https://disk.yandex.ru/d/ih8xTNp0unTc7w
+
+## пулл реквест
+
+https://github.com/TatianaMil/movies-explorer-frontend/compare/level-3?expand=1
