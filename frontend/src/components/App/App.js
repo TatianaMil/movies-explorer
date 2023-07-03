@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Route, Routes, useNavigate, useLocation } from "react-router-dom"
+import { Route, Routes, useNavigate, useLocation, Navigate } from "react-router-dom"
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute"
 import "./App.css"
 import Header from "../Header/Header"
@@ -279,7 +279,7 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
         <div className="page__content">
-          <Routes>
+        <Routes>
             <Route
               path={"/"}
               element={
@@ -290,22 +290,34 @@ function App() {
                 </>
               }
             />
+
             <Route
               path={"/signin"}
               element={
-                <Login
-                  onAuthorization={handleAuthorize}
-                  isLoading={isLoading}
-                />
+                isLoggedIn ? (
+                  <Navigate to="/movies" replace />
+                ) : (
+                  <Login
+                    onAuthorization={handleAuthorize}
+                    isLoading={isLoading}
+                  />
+                )
               }
             />
+
             <Route
               path={"/signup"}
               element={
-                <Register onRegister={handleRegister} isLoading={isLoading} />
+                isLoggedIn ? (
+                  <Navigate to="/movies" replace />
+                ) : (
+                  <Register onRegister={handleRegister} isLoading={isLoading} />
+                )
               }
             />
+
             <Route path={"*"} element={<NotFound />} />
+
             <Route
               path={"/movies"}
               element={
@@ -319,6 +331,7 @@ function App() {
                 />
               }
             />
+
             <Route
               path={"/saved-movies"}
               element={
@@ -331,6 +344,7 @@ function App() {
                 />
               }
             />
+
             <Route
               path={"/profile"}
               element={
